@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "telegram": "^2.19.19",
     "vue": "^3.2.33",
     "vue-router": "^4.0.14"
   },

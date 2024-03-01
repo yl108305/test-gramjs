@@ -1,27 +1,24 @@
 <template>
   <section id="hero">
-    <h1 class="tagline">
-      <span class="accent">Electron-Egg</span>
-    </h1>
-    <p class="description">
-      A fast, desktop software development framework
-    </p>
-    <p class="actions">
-      <a class="setup" href="https://www.kaka996.com/" target="_blank">Get Started</a>
-    </p>
+    <button @click="test">test</button>
   </section>
 </template>
 <script>
 
+import {qrLoginGetQr} from "../../../utils/tg";
+
 export default {
   data() {
     return {
-      test: '',
+
     };
   },
   methods: {
     test () {
-      // 
+      //
+      qrLoginGetQr('',(r)=>{
+        console.log(r)
+      })
     },
   }
 };
@@ -80,4 +77,3 @@ html:not(.dark) .accent,
   transition-duration: 0.2s;
 }
 </style>
-  
